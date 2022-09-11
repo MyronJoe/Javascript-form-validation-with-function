@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Simple-js-form-validation</title>
+</head>
+<body>
+    <section>
+        <div class="header">
+            <h1>Registration Form</h1>
+        </div>
+
+        <form action="" method="POST" enctype="multipart/form-data" id="form" class="form-group" novalidate>
+            
+
+            <label for="username">Username</label><br>
+            <input type="text" name="username" id="username" placeholder="enter username" class="form-input"><br>
+            <span class="error-span" id="username_error"></span>
+
+            <label class="label" for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter email" class="form-input"><br>
+            <span class="error-span" id="email_error"></span>
+
+            <label class="label" for="password">Password</label><br>
+            <input type="password" name="password" id="password" placeholder="enter password" class="form-input"><br>
+            <span class="error-span" id="password_error"></span>
+
+            <label class="label" for="confirm-password">Confirm Password</label><br>
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm passwprd" class="form-input"><br>
+            <span class="error-span" id="confirm_pass_error"></span>
+
+            <input type="submit" class="btn"><br>
+
+        </form>
+
+    </section>
+
+    <script src="forms1.js"></script>
+
+</body>
+
+</html>
