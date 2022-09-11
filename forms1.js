@@ -19,7 +19,7 @@ form.addEventListener('submit', function(e){
                 if(isEmpty(password, 'password cant be empty', password_error)){
                     if(checklength(password, 'username should be > 7', password_error, 8)){
                         if(passmatch(password, confirm_password, 'password does not match', confirm_pass_error)){
-                            return true
+                            return true;
                         }
                     }
                 }
