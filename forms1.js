@@ -5,12 +5,10 @@ let email = document.getElementById('email')
 let password = document.getElementById('password')
 let confirmPassword = document.getElementById('confirm-password')
 
-
 let username_error = document.getElementById('username_error')
 let email_error = document.getElementById('email_error')
 let password_error = document.getElementById('password_error')
 let confirm_pass_error = document.getElementById('confirm_pass_error')
-
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -31,7 +29,6 @@ form.addEventListener('submit', (e) => {
     }
 
 })
-
 
 function checkEmpty(el, msg, elerror) {
     if (el == null || el.value == "") {
@@ -73,7 +70,6 @@ function checkLength(el, msg, elerror, length) {
 }
 
 function passMatch(el1, el2, msg, elerror) {
-    
     if (el1.value !== el2.value) {
         el1.classList.remove('success-border')
         el1.classList.add('error-border')
